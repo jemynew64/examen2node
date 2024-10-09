@@ -1,0 +1,27 @@
+### Obtener todas las localizaciones
+GET http://localhost:3000/api/locations
+
+### Obtener una localización por ID
+GET http://localhost:3000/api/locations/2
+
+### Crear una nueva localización
+POST http://localhost:3000/api/locations
+Content-Type: application/json
+
+{
+  "name": "Lima",
+  "address": "Av. Principal 123",
+  "enabled": true
+}
+
+### Actualizar una localización por ID
+PUT http://localhost:3000/api/locations/1
+Content-Type: application/json
+
+{
+  "name": "Ate",
+  "address": "Av. Secundaria 456"
+}
+
+### Soft Delete (marcar como deshabilitado)
+DELETE http://localhost:3000/api/locations/1

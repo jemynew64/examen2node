@@ -1,0 +1,45 @@
+<form action="/api/users/add" method="POST" class="row g-3">
+  <h2 class="text-center">Add New User</h2>
+  <div class="col-md-6">
+    <label for="firstName" class="form-label">First Name</label>
+    <input type="text" class="form-control" id="firstName" name="firstName" required>
+  </div>
+  <div class="col-md-6">
+    <label for="lastName" class="form-label">Last Name</label>
+    <input type="text" class="form-control" id="lastName" name="lastName" required>
+  </div>
+  <div class="col-md-6">
+    <label for="dni" class="form-label">DNI</label>
+    <input type="number" class="form-control" id="dni" name="dni" required>
+  </div>
+  <div class="col-md-6">
+    <label for="emergency_number" class="form-label">Emergency Number</label>
+    <input type="text" class="form-control" id="emergency_number" name="emergency_number" required>
+  </div>
+  <div class="col-md-6">
+    <label for="phone" class="form-label">Phone</label>
+    <input type="number" class="form-control" id="phone" name="phone" required>
+  </div>
+  <div class="col-md-6">
+    <label for="birthDate" class="form-label">Birth Date</label>
+    <input type="date" class="form-control" id="birthDate" name="birthDate" required>
+  </div>
+  <div class="col-md-6">
+    <label for="gender" class="form-label">Gender</label>
+    <select class="form-control" id="gender" name="gender" required>
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+    </select>
+  </div>
+  <div class="col-md-6">
+    <label for="roleId" class="form-label">Role ID</label>
+    <input type="number" class="form-control" id="roleId" name="roleId" required>
+  </div>
+  <div class="col-md-6">
+    <label for="locationId" class="form-label">Location ID</label>
+    <input type="number" class="form-control" id="locationId" name="locationId" required>
+  </div>
+  <div class="col-12">
+    <button type="submit" class="btn btn-primary">Add User</button>
+  </div>
+</form>
